@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./Stepper.css";
-import Particle from "./Particle";
 const steps = ["Personal Details", "Education", "Skills", "Address"];
 const steper_data = ["Personal Details", "Education", "Skills", "Address"];
 const StepperForm = () => {
@@ -90,7 +89,6 @@ const StepperForm = () => {
   return (
     <div>
       <div>
-        <Particle />
       </div>
       <div id="hello">
         {/* <h1 id="hello">hello</h1> */}
