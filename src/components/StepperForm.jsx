@@ -88,8 +88,7 @@ const StepperForm = () => {
   };
   return (
     <div>
-      <div>
-      </div>
+      <div></div>
       <div id="hello">
         {/* <h1 id="hello">hello</h1> */}
         {steper_data.map((item, i) => (
@@ -130,6 +129,7 @@ const StepperForm = () => {
                       name="firstName"
                       value={formData.personalDetails.firstName}
                       onChange={(e) => handleChange(e, "personalDetails")}
+                      required
                     />
                     <input
                       type="text"
@@ -137,6 +137,7 @@ const StepperForm = () => {
                       name="lastName"
                       value={formData.personalDetails.lastName}
                       onChange={(e) => handleChange(e, "personalDetails")}
+                      required
                     />
                     <input
                       type="email"
@@ -144,6 +145,7 @@ const StepperForm = () => {
                       name="email"
                       value={formData.personalDetails.email}
                       onChange={(e) => handleChange(e, "personalDetails")}
+                      required
                     />
                     <input
                       type="text"
@@ -151,6 +153,7 @@ const StepperForm = () => {
                       name="Phone"
                       value={formData.personalDetails.Phone}
                       onChange={(e) => handleChange(e, "personalDetails")}
+                      required
                     />
                     <input
                       type="text"
@@ -158,6 +161,7 @@ const StepperForm = () => {
                       name="Gender"
                       value={formData.personalDetails.Gender}
                       onChange={(e) => handleChange(e, "personalDetails")}
+                      required
                     />
                     <input
                       type="date"
@@ -165,6 +169,7 @@ const StepperForm = () => {
                       name="Date"
                       value={formData.personalDetails.Date}
                       onChange={(e) => handleChange(e, "personalDetails")}
+                      required
                     />
                     <br />
                     <label htmlFor="profileImage">Upload Profile Picture</label>
@@ -173,6 +178,7 @@ const StepperForm = () => {
                       name="profileImage"
                       accept="image/*"
                       onChange={(e) => handleChange(e, "personalDetails")}
+                      required
                     />
                   </div>
                 )}
@@ -184,6 +190,7 @@ const StepperForm = () => {
                       name="College"
                       value={formData.education.College}
                       onChange={(e) => handleChange(e, "education")}
+                      required
                     />
                     <input
                       type="text"
@@ -191,6 +198,7 @@ const StepperForm = () => {
                       name="degree"
                       value={formData.education.degree}
                       onChange={(e) => handleChange(e, "education")}
+                      required
                     />
                     <input
                       type="text"
@@ -198,6 +206,7 @@ const StepperForm = () => {
                       name="DegreeCGPA"
                       value={formData.education.DegreeCGPA}
                       onChange={(e) => handleChange(e, "education")}
+                      required
                     />
                     <input
                       type="text"
@@ -205,6 +214,7 @@ const StepperForm = () => {
                       name="DegreeYear"
                       value={formData.education.DegreeYear}
                       onChange={(e) => handleChange(e, "education")}
+                      required
                     />
                     <input
                       type="text"
@@ -212,6 +222,7 @@ const StepperForm = () => {
                       name="InterCollege"
                       value={formData.education.InterCollege}
                       onChange={(e) => handleChange(e, "education")}
+                      required
                     />
                     <input
                       type="text"
@@ -219,6 +230,7 @@ const StepperForm = () => {
                       name="InterCGPA"
                       value={formData.education.InterCGPA}
                       onChange={(e) => handleChange(e, "education")}
+                      required
                     />
                     <input
                       type="text"
@@ -226,6 +238,7 @@ const StepperForm = () => {
                       name="InterYear"
                       value={formData.education.InterYear}
                       onChange={(e) => handleChange(e, "education")}
+                      required
                     />
                     <input
                       type="text"
@@ -233,6 +246,7 @@ const StepperForm = () => {
                       name="School"
                       value={formData.education.School}
                       onChange={(e) => handleChange(e, "education")}
+                      required
                     />
                     <input
                       type="text"
@@ -240,6 +254,7 @@ const StepperForm = () => {
                       name="SSCMarks"
                       value={formData.education.SSCMarks}
                       onChange={(e) => handleChange(e, "education")}
+                      required
                     />
                     <input
                       type="text"
@@ -247,6 +262,7 @@ const StepperForm = () => {
                       name="SSCYear"
                       value={formData.education.SSCYear}
                       onChange={(e) => handleChange(e, "education")}
+                      required
                     />
                   </div>
                 )}
@@ -258,6 +274,7 @@ const StepperForm = () => {
                       name="skills"
                       value={formData.skills}
                       onChange={(e) => handleChange(e, "skills")}
+                      required
                     />
                   </div>
                 )}
@@ -269,6 +286,7 @@ const StepperForm = () => {
                       name="address"
                       value={formData.address}
                       onChange={(e) => handleChange(e, "address")}
+                      required
                     />
                   </div>
                 )}
